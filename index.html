@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Bookmarker</title>
+        <link rel="stylesheet" href="Style/style.css">
+        
+    </head>
+    <body onload="fetchBookmarks()">
+        <div class="Container">
+            <header>
+                <div class="Container">
+                    <h1>Bookmarker</h1>
+                </div>
+            </header>
+            
+            <article id="articles">
+                <h3>Bookmark Your Favourite Websites.</h3>
+            </article>
+            
+            <div id="welcome">
+                <div class="Container">
+                    <button id="welcomebutton">Add A Website</button>
+                </div>
+            </div>
+            
+            <section id="form">
+                <div class="Container">
+                    <form id="myForm">
+                        <p>Website Name:</p>
+                        <input placeholder="Website Name." type="text" id="siteName">
+                        <p>Website URL:</p>
+                        <input placeholder="Website URL." type="text" id="siteURL">
+                        <button type="submit" id="submitButton">ADD</button>
+                    </form>
+                    
+                </div>
+            </section>
+                        
+            <section id="addedWebsites">
+                <div class="Container">
+                    <div id="bookmarkList"></div>
+                </div>
+            </section>
+            
+            <div id="done">
+                <div class="Container">
+                    <button id="doneButton">Done!</button>
+                </div>
+            </div>
+            
+            <footer>
+                <h3>Made By Shrish2784</h3>
+                <h6>&copy; copyright 2017</h6>
+            </footer>
+            
+        </div>
+        <script src="Js/js.js"></script>
+    </body>
+</html>

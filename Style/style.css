@@ -1,0 +1,194 @@
+@keyframes appear{
+    0% {transform: scale(0);}
+    80% {transform: scale(1.3);}
+    100% {transform: scale(1);}
+}
+
+@keyframes gone{
+    0% {
+        transform: scale(1);
+    }
+    80% {transform: scale(1.3);}
+    99% {
+        transform: scale(0);
+    }
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    background: url(../Images/Websites.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+.Container{
+    width: 80%;
+    margin: auto;
+}
+
+header{
+    margin-top: 20px;
+    border-bottom: 3px #1F5D6B solid;
+    border-top: 3px #1F5D6B solid;
+    background: linear-gradient(rgba(141, 189, 198, .8),rgba(46, 113, 130, .8));
+    padding: 5px;
+    color: rgba(07,63,73,1);
+    
+}
+
+header h1{
+    text-align: center;
+}
+
+#articles{
+    border-bottom: 3px #1F5D6B solid;
+    background: linear-gradient(rgba(141, 189, 198, .9),rgba(46, 113, 130, .99));
+    padding: 5px;
+    margin-top: 20px;
+    color: aliceblue;
+    text-align: center;
+}
+
+#welcome {
+    text-align: center;
+    margin: 20px;
+}
+#welcomebutton{
+    border: 0;
+    width: 50%;
+    padding: 15px 20px;
+    background-color: #1F5D6B;
+    color: aliceblue;
+    text-transform: uppercase;
+    transition: width 0.3s ease;
+}
+#welcomebutton:hover{
+    width: 80%;
+}
+
+#form{
+    text-align: center;
+    background: linear-gradient(rgba(141, 189, 198, .8),rgba(46, 113, 130, .8));
+    color: aliceblue;
+    min-height: 200px;
+    padding: 20px;
+    margin-top: 20px;
+    border: 3px #1F5D6B solid;
+    display: none;
+}
+
+#form.appear{
+    display: block;
+    animation: appear 0.3s ease;
+}
+#form.gone{
+/*    display: block;*/
+    animation: gone 0.3s ease;
+    transform: scale(0);
+}
+
+#form p{
+    font-size: 20px;
+    margin: 0px;
+}
+#form input{
+    font-size: 20px;
+    margin: 20px 0px;
+    width: 90%;
+    padding: 10px;
+}
+
+#submitButton{
+    border: 0px;
+    padding: 15px;
+    background-color: #1F5D6B;
+    color: aliceblue;
+    margin: 15px 0px;
+    font-size: 15px;
+    width: 20%;
+    transition: width 0.3s ease;
+}
+#submitButton:hover{
+    width: 60%;
+}
+
+#done{
+    text-align: center;
+    margin: 20px;
+}
+#doneButton{
+    border: 0;
+    width: 50%;
+    padding: 15px 20px;
+    background-color: #1F5D6B;
+    color: aliceblue;
+    text-transform: uppercase;
+    transition: width 0.3s ease;
+    display: none;
+}
+#doneButton:hover{
+    width: 80%;
+}
+#doneButton.appear{
+    display: inline;
+    animation: appear 0.3s ease;
+}
+#doneButton.gone{
+    display: inline;
+    animation: gone 0.3s ease;
+}
+
+#bookmarkList{
+    display: block;
+    animation: appear 0.3s ease;
+}
+    
+.Bookmark{
+    width: 80%;
+    margin: 20px auto;
+    background: linear-gradient(#8DBDC6, #2E7182);
+    text-align: center;
+    color: aliceblue;
+    padding: 20px 20px 0px 20px;
+    animation: appear 0.3s ease;
+}
+
+.Bookmark h3{
+    margin: 0px;
+    font-size: 20px;
+}
+
+.Bookmark button{
+    padding: 15px 0px;
+    width: 50%;
+    margin: 10px;
+    background-color: #1F5D6B;
+    border: 0px;
+    transition: width 0.3s ease;
+}
+
+.Bookmark button:hover{
+    width: 80%;
+}
+
+.Bookmark button a{
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    width: 100%;
+}
+
+footer{
+    background: linear-gradient(#8DBDC6, #2E7182);
+    color: #073F49;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 3px #1F5D6B solid;
+}
+
+footer h3, footer h6{
+    margin: 5px 0px;
+}
